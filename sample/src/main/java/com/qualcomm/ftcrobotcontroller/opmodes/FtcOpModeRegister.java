@@ -47,11 +47,13 @@ public class FtcOpModeRegister implements OpModeRegister {
      */
     public void register(OpModeManager manager) {
         //Custom op modes
-        manager.register("Null", NullOp.class);
-        manager.register("Mecanum Prototype", MecanumPrototypeTeleop.class);
-        manager.register("MonkeyC Do", MonkeyCDo.class);
-        manager.register("MonkeyC Write", MonkeyCWrite.class);
-        manager.register("LoggingSample", LoggingSample.class);
-        manager.register("OptionsSample", OptionsSample.class);
+        //manager.register("Null", NullOp.class);
+        //manager.register("Mecanum Prototype", MecanumPrototypeTeleop.class);
+        manager.register("Teleop", Teleop.class);
+        manager.register("Monkey Do", MonkeyCDo.class);
+        manager.register("MonkeyC", MonkeyCWrite.class);
+        //manager.register("LoggingSample", LoggingSample.class);
+        //manager.register("OptionsSample", OptionsSample.class);
+        manager.register("OrientOp", OrientOp.class);
     }
 }
